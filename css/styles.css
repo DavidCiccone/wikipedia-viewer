@@ -1,0 +1,39 @@
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type=text] {
+    width: 195px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png');
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline:0;
+    border-radius: 30px;
+
+
+}
+
+input[type=text]:focus {
+    width: 300px;
+}
+
+div > .random-link {
+    text-decoration: none;
+    
+}
+
+form {
+    padding-top: 20px;
+}
