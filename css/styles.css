@@ -1,18 +1,19 @@
+/*--- Centers the content ---*/
 .center {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    margin: -35px 0 0 -150px;   
 }
 
+/*--- Input box stylings ---*/
 input[type=text] {
-    width: 195px;
+    width: 205px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: white;
+    background-color: #774F47;
     background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png');
     background-position: 5px 5px; 
     background-repeat: no-repeat;
@@ -21,19 +22,100 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
     outline:0;
     border-radius: 30px;
-
-
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input[type=text]:focus {
-    width: 300px;
+    width: 266px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+input::-ms-input-placeholder { /* Microsoft Edge */
+   font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 div > .random-link {
     text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#search-text {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.styles {
+    margin: 0 auto;
+    width: 65%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background-color: #FFAAAA;
+    cursor: pointer;
+    position: relative;
+}
+
+.styles:hover {
+    
+    border-left: 6px solid #ff0000;
     
 }
 
-form {
-    padding-top: 20px;
+#content {
+    margin-top: 125px;
+}
+
+body {
+    background-color: #550000;
+}
+
+.title-styles,
+.snip-styles {
+    padding-left: 2em;
+}
+
+.title-styles {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 14px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.snip-styles {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding:0 3.6em;
+}
+
+.links {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }

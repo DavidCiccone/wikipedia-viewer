@@ -9,7 +9,7 @@
   <meta name="author" content="David Ciccone">
 
   <link rel="stylesheet" href="css/styles.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -18,11 +18,13 @@
 <body>
 <div class="center">
 	
-	<form>
-      <input type="text" name="search" placeholder="Search Wikipedia">
-    </form>
+	
+    <input id="search-text" type="text" name="search" placeholder="Search Wikipedia">  
+    
     <a href="https://en.wikipedia.org/wiki/Special:Random" class="random-link">Click for a Random Wikipedia Page Here</a>
 </div>
+<div id="content"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/js.js"></script>
 </body>
 </html>
